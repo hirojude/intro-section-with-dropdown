@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    
+
+    /* header{
+      width: 90%;
+      margin: 1rem auto;
+      display: grid;
+      grid-template-columns: auto 90%;
+      justify-content: center;
+      align-items: center;
+      gap: 5%;
+      padding: 1rem;
+    }
+
+    .top-container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 100%;
+    }
+
+    nav ul,.top-left-container ul{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30%;
+      list-style: none;
+    }
+    nav ul{
+      max-width: 100%;
+    }
+
+    #register-button{
+      border: solid;
+      border-width: 1px;
+      padding: 0.5rem 1rem ;
+      border-radius: 15px;
+
+    }
+    a{
+      text-decoration: none;
+    }
+ */
+
+  </style>
+</head>
+<body>
+  <header>
+    <img src="images/logo.svg" alt="logo" class="logo">
+
+    <div class="top-container">
+      <nav>
+      
+        <ul id="nav">
+          <li><a href="">
+            <div class="top">Features 
+              <img src="images/icon-arrow-down.svg" alt="" id="down">
+              <img src="images/icon-arrow-up.svg" alt="" id="up"> 
+
+              <div class="drop-menu">
+                <ul>
+                  <li style="list-style-image: url('images/icon-todo.svg');"><a href="">Todo List</a></li>
+                  <li style="list-style-image: url('images/icon-calendar.svg');"><a href="">Calender </a></li>
+                  <li style="list-style-image: url('images/icon-reminders.svg');"><a href="">Reminder</a></li>
+                  <li style="list-style-image: url('images/icon-planning.svg');"><a href="">Planning</a></li>
+                </ul>
+              </div>
+
+            </div>
+          </a></li>
+
+
+          <li><a href="">
+            <div class="top">Company 
+              <img src="images/icon-arrow-down.svg" alt="" id="down">
+              <img src="images/icon-arrow-up.svg" alt="" id="up"> 
+
+              <div class="drop-menu">
+                 <ul>
+                  <li><a href="http://" target="_blank" rel="noopener noreferrer">History</a></li>
+                  <li><a href="">Our Team </a></li>
+                  <li><a href="">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </a></li>
+
+
+          <li><a href="">Careers</a></li>
+          <li><a href="">About</a></li>
+        </ul>
+      
+      </nav>
+
+
+      <div class="top-right-container">
+        <ul>
+          <li><a href="">Login</a></li>
+          <li id="register-button"><a href="">Register</a></li>
+        </ul>
+      </div>
+
+
+
+      <div class="mobile-menu">
+        <img src="images/icon-menu.svg" alt="">
+        <div class="menu">
+          <ul>
+
+
+            <li><a href="">Login</a></li>
+            <li id="register-button"><a href="">Register</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+
+    
+
+    
+  </header>
+  <section class="hero">
+    
+
+    <div class="text-content">
+
+      <div class="now">
+        <div class="main-content">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <button>Learn more</button>
+        </div>
+        <div class="logo-content">
+          <img src="images/client-databiz.svg" alt="client-databiz-logo">
+          <img src="images/client-audiophile.svg" alt="client-audiophile-logo">
+          <img src="images/client-meet.svg" alt="client-meet-logo">
+          <img src="images/client-maker.svg" alt="client-maker-logo">
+        </div>
+      </div>
+    </div>
+
+
+    <img src="images/image-hero-desktop.png" id="hero-illustration" alt="illustration">
+
+
+  
+
+  </section>
+
+
+
+
+  
+
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>

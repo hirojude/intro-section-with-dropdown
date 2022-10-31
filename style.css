@@ -1,0 +1,277 @@
+/* -----------------Reset--------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-weight: 500; */
+    /* color: hsl(0, 0%, 41%); */
+    font-family: "Epilogue", sans-serif;
+
+}
+
+
+
+
+
+/*################--typography--#############*/
+html{
+    font-size: 17px;    
+}
+
+h1{
+    font-size: 5rem;
+    color: hsl(0, 0%, 8%);
+    font-weight: 700;
+    line-height: 4rem;
+    margin: 2rem 0;
+}
+
+p{
+    font-weight: 500;
+    color:  hsl(0, 0%, 41%);
+    margin: 2rem 0;
+}
+
+a{
+    text-decoration: none;
+    color:  hsl(0, 0%, 41%);
+}
+
+a:hover{
+    color: black;
+    font-weight: 500;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
+
+
+
+/* ###################---header---##################### */
+header{
+    max-width: 95%;
+    margin: 1rem auto 4rem auto;
+    display: grid;
+    grid-template-columns: auto 9fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+
+}
+
+.top{
+    width: max-content;
+    position: relative;
+}
+
+img.logo{
+    /* padding-top: 0.5rem; */
+}
+
+div.top-container{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0.5rem; */
+    
+}
+
+nav{
+    padding: 0.5rem;
+}
+
+/* -------------------drop-down------------------ */
+#up{
+    display: none;
+}
+.top:hover #up{
+    display: inline-block;
+}
+.top:hover .drop-menu{
+    display: block;
+    position: absolute;
+    z-index: 1;
+}
+.top:hover #down{
+    display: none;
+}
+.drop-menu{
+    display: none;
+    padding: 12px 16px;
+    box-shadow: 1px;
+}
+
+.drop-menu ul{
+    display: block;
+    min-width: 150px;    
+}
+
+/* ----------------------molbile-menu------------ */
+
+.mobile-menu{
+    display: none;
+   
+}
+
+.menu{
+    display: none;
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color:;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.mobile-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+
+
+/* ----------------register-button----------------- */
+#register-button{
+    border: solid;
+    border-width: 2px;
+    border-color: hsl(0, 0%, 41%);
+    padding: 0.4rem 1rem;
+    border-radius: 1rem;
+
+}
+
+
+/* -----------------hero-button---------------------- */
+button{
+    border: none;
+    background-color:  hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+}
+
+button:hover{
+    color: hsl(0, 0%, 8%);
+    background-color:hsl(0, 0%, 98%);
+    cursor: pointer;
+    padding: 0.6rem 1.5rem;
+    border: solid 0.1rem;
+    /* font-weight: 700; */
+}
+
+
+/* #####################---Hero---##################### */
+img{
+    max-width: 100%;
+    max-height: 650px;
+}
+.now{
+    max-height: 100%;
+}
+.hero{
+    max-width: 85%;
+    max-height: 650px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    align-content: space-between;
+    gap: 7rem;
+
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+
+}
+
+
+
+/* -------------------logo-box-------------------- */
+.logo-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    
+    
+}
+
+
+/* --------------------media-quires------------------------ */
+@media screen and (max-width:750px){
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem auto;
+        margin-bottom: 2rem;
+    }
+
+    h1{
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    p{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+        padding: 0 1rem;
+    }
+
+    .top-right-container, nav{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+    .mobile-menu:hover .menu{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        float: left;
+
+    }
+    .hero{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        max-width: 100%;
+        max-height: 100%;
+        margin: 0;
+        margin-bottom: 2rem;
+        
+        
+    }
+    #hero-illustration{
+        order: -1;
+    }
+    .main-content{
+        text-align: center;
+    }
+    .logo-content{
+        flex-wrap: nowrap;
+        gap: 0.2rem;
+    }
+}
